@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+  </head>
+  <body>
+    {% for estatistica in estatisticas %}
+      Local: {{ estatistica.local }} Data: {{ estatistica.data }} <br/>
+      Parâmetro: {{ estatistica.parametro }} Medição: {{ estatistica.valor }}{{ estatistica.unidade }} <br/>
+      <hr/>
+    {% endfor %}
+  </body>
+</html>
